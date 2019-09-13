@@ -6,7 +6,7 @@ import styled from "styled-components";
 import Person from './Person';
 // const url = 'https://swapi.co/api/people/?format=json';
 
-// `;
+
 const StyledApp = styled.div`
  text-align: center;
  .Header {
@@ -54,26 +54,26 @@ const App = () => {
     axios
       .get(`https://swapi.co/api/people`)
       .then(response => {
-        console.log(response);
         setPeople(response.data.results);
       })
-      .catch(error => console.error(error))
-      return(
-        console.log('clear')
-      )
+      .catch(error => {
+        console.log(error.message)
+      })
   }, []);
   return (
     <StyledApp>
     <h1 className="Header">React Wars</h1>
     <table>
-      <tr>
-        <th>Name</th>
-        <th>Gender</th>
-        <th>Height</th>
-        <th>Hair Color</th>
-        <th>Skin Color</th>
-        <th>Birth Year</th>
-      </tr>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Height</th>
+          <th>Hair Color</th>
+          <th>Skin Color</th>
+          <th>Birth Year</th>
+        </tr>
+      </tbody>
     </table>
 
     {people

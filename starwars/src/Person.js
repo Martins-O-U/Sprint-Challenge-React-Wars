@@ -25,7 +25,6 @@ td, th {
   padding: 8px;
   width:130px;
   font-size: 1.25rem;
-  /* max-width: 10%; */
  
 }
 tr:nth-child(even) {
@@ -38,15 +37,16 @@ const Person = ({ data }) => {
   return (
     <StyledPerson>
       <table>
-
-        <tr>
-          <td>{data.name}</td>
-          <td>{data.gender}</td>
-          <td>{data.height}</td>
-          <td>{data.hair_color}</td>
-          <td>{data.skin_color}</td>
-          <td>{data.birth_year}</td>
-        </tr>
+        <tbody>
+            <tr>
+            <td>{data.name}</td>
+            <td>{data.gender}</td>
+            <td>{data.height}</td>
+            <td>{data.hair_color}</td>
+            <td>{data.skin_color}</td>
+            <td>{data.birth_year}</td>
+            </tr>
+        </tbody>
       </table>
     </StyledPerson>
   );
