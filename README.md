@@ -25,14 +25,24 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+    Ans: ReactJS is a JavaScript library used in various forms to create complex, rich user interfaces. It is an open-source library which is used specifically for single page applications. It helps solves problems of better handling of dynamic data for faster response times since it is component based thus done at less expense or cost since it render only components affected by changes made. It lets you design simple views for every application state. 
 
 - [ ] What does it mean to _think_ in react?
+        Ans: This involves the following five steps:
+            Step 1: Breaking The UI Into A Component Hierarchy
+            Step 2: Building A Static Version in React
+            Step 3: Identifying The Minimal (but complete) Representation Of UI State
+            Step 4: Identifying Where Your State Should Live
+            Step 5: Adding Inverse Data Flow
 
 - [ ] Describe state.
+        Ans: This can be said to be an Object that stores information for the component.
 
 - [ ] Describe props.
+        Ans: A props a parameter that stores information/data that is passed to other components.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+        Ans:   A side effect is an action that affects a process outside the scope of the function being executed. An example would be a network request, which has your code communicating with a third party causing logs to be recorded, caches to be saved or updated etc.
 
 ## Project Set Up
 
